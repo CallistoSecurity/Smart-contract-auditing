@@ -40,7 +40,7 @@ There are two ways to avoid a complete re-audit if the contract is updated:
 
 ### We accept USDT as payments.
 
-Callisto Security accept USDT tokens on ETH or BSC chain to the multisig wallet address 0x6317c6944bd1cD3932d062cce39d7Fd602119529
+Callisto Security accept USDT tokens on [ETH](https://etherscan.io/address/0x6317c6944bd1cD3932d062cce39d7Fd602119529) or [BSC](https://bscscan.com/address/0x6317c6944bd1cD3932d062cce39d7Fd602119529) chain to the multisig wallet address 0x6317c6944bd1cD3932d062cce39d7Fd602119529
 
 
 ## Callisto Security Department workflow.
