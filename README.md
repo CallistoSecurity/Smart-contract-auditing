@@ -7,8 +7,8 @@ Previous audits you can find here: https://github.com/EthereumCommonwealth/Audit
 # Security Audit options
 
 There are three options of the security audit workflow suitable for small-, medium- and large-scale projects:
-- Standard (standard projects such as ICOs, ERC20, ERC223, ERC721, ERC721A tokens and NFTs fall in this category - 2 auditors. $500 + $1 per line of code / minimum $1000)
-- Advanced (non-standard projects requiring more careful review - 3 auditors. $1000 + $1.25 per line / minimum $2000)
+- Standard (standard projects such as ICOs, ERC20, ERC223, ERC721, ERC721A tokens and NFTs fall in this category - 2 auditors. $600 + $1.2 per line of code / minimum $1200)
+- Advanced (non-standard projects requiring more careful review - 3 auditors. $1200 + $1.5 per line / minimum $2400)
 - Corporate (projects that require post-launch support - 3 auditors - Callisto Team will handle the bug-bounty and provide a 1 month long period of technical support regarding the necessary security enhancement procedures and track/highlight any issues and potential threats - this plan allows to further apply for Callisto DAPP Insurance program)
 
 # Submitting an audit request
