@@ -4,6 +4,10 @@
 
 Previous audits you can find here: https://github.com/EthereumCommonwealth/Auditing/issues
 
+# Linking Audit Services and CLO Value
+
+In our continuous efforts to enhance the value of CLO, we are introducing a strategic initiative that links the Callisto Security Department's activities directly with the value of CLO. A portion of the revenue from our audit services, equivalent to a 20%, will be used to buy back CLO tokens and burn them. This unique approach aligns the success of our audit services with the prosperity of the CLO ecosystem, reinforcing our commitment to maintaining the most affordable audits in the market while simultaneously supporting the CLO value.
+
 # Security Audit options
 
 There are three options of the security audit workflow suitable for small-, medium- and large-scale projects:
@@ -25,8 +29,6 @@ Audit request can be submitted directly via [Github Issues](https://github.com/C
 Although we provide free audits, we ask our customers to understand that real people work in our organization, but not automated tests. We strongly recommend using specifically designed tools for debugging and testing. We also recommend using automated tests to verify minor changes and fixes.
 
 Please, only submit your code for review once the development of the smart-contract is in its final stage and the contract is ready for deployment.
-
-Only the first audit of a smart-contract code is free. If a customer submits an updated smart-contract for re-audit then it will be necessary to pay for the re-audit ($0,6 per line of code).
 
 Re-auditing of a smart-contract includes a full check of the smart-contract code, as any minor changes could affect the overall behavior of the smart-contract. Even if 10 lines of code were changed, the entire smart contract will be re-audited.
 
@@ -127,7 +129,7 @@ Where:
 
 `reward` - the amount of CLO that will be paid to the auditor for his(her) contribution to this security audit.
 
-`audit reward` = $500 + $1 * `[number of lines]`
+`audit reward` = budget for this audit.
 
 `sum (auditor points)` - all points earned by the auditor.
 
