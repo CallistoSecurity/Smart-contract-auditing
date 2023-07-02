@@ -1,42 +1,42 @@
 # Callisto Smart-contract auditing department.
 
-## Callisto Auditing Department are moving to Callisto Security
+## Callisto Auditing Department is moving to Callisto Security
 
 Previous audits you can find here: https://github.com/EthereumCommonwealth/Auditing/issues
 
 # Linking Audit Services and CLO Value
 
-In our continuous efforts to enhance the value of CLO, we are introducing a strategic initiative that links the Callisto Security Department's activities directly with the value of CLO. A portion of the revenue from our audit services, equivalent to a 20%, will be used to buy back CLO tokens and burn them. This unique approach aligns the success of our audit services with the prosperity of the CLO ecosystem, reinforcing our commitment to maintaining the most affordable audits in the market while simultaneously supporting the CLO value.
+In our continuous efforts to enhance the value of CLO, we are introducing a strategic initiative that links the Callisto Security Department's activities directly with the value of CLO. A portion of the revenue from our audit services, equivalent to 20%, will be used to buy back CLO tokens and burn them. This unique approach aligns the success of our audit services with the prosperity of the CLO ecosystem, reinforcing our commitment to maintaining the most affordable audits in the market while simultaneously supporting the CLO value.
 
 # Security Audit options
 
 There are three options of the security audit workflow suitable for small-, medium- and large-scale projects:
-- Standard (standard projects such as ICOs, ERC20, ERC223, ERC721, ERC721A tokens and NFTs fall in this category - 2 auditors. $600 + $1.2 per line of code / minimum $1200)
+- Standard (standard projects such as ICOs, ERC20, ERC223, ERC721, ERC721A tokens, and NFTs fall in this category - 2 auditors. $600 + $1.2 per line of code / minimum $1200)
 - Advanced (non-standard projects requiring more careful review - 3 auditors. $1200 + $1.5 per line / minimum $2400)
-- Corporate (projects that require post-launch support - 3 auditors - Callisto Team will handle the bug-bounty and provide a 1 month long period of technical support regarding the necessary security enhancement procedures and track/highlight any issues and potential threats - this plan allows to further apply for Callisto DAPP Insurance program)
+- Corporate (projects that require post-launch support - 3 auditors - Callisto Team will handle the bug-bounty and provide a 1-month long period of technical support regarding the necessary security enhancement procedures and track/highlight any issues and potential threats - this plan allows to further apply for Callisto DAPP Insurance program)
 
 # Submitting an audit request
 
 Audit request can be submitted directly via [Github Issues](https://github.com/CallistoSecurity/Smart-contract-auditing/issues) or [open telegram channel](https://t.me/CallistoAudits) :
 
-1. Go to Auditing/issues section and click a [New Issue](https://github.com/CallistoSecurity/Smart-contract-auditing/issues/new) button.
-2. Fill the form and click a "Submit New Issue" button.
+1. Go to the Auditing/issues section and click a [New Issue](https://github.com/CallistoSecurity/Smart-contract-auditing/issues/new) button.
+2. Fill out the form and click the "Submit New Issue" button.
 3. Follow the comments in the corresponding "issue" discussion.
-4. The result of a security audit will be published at the comment thread with the `Security Audit Report` header once auditors complete their task.
+4. The result of a security audit will be published in the comment thread with the `Security Audit Report` header once auditors complete their tasks.
 
 ## Callisto Network is not a debugging tool!
 
-Although we provide free audits, we ask our customers to understand that real people work in our organization, but not automated tests. We strongly recommend using specifically designed tools for debugging and testing. We also recommend using automated tests to verify minor changes and fixes.
+Although we provide free audits, we ask our customers to understand that real people work in our organization, not automated tests. We strongly recommend using specifically designed tools for debugging and testing. We also recommend using automated tests to verify minor changes and fixes.
 
-Please, only submit your code for review once the development of the smart-contract is in its final stage and the contract is ready for deployment.
+Please, only submit your code for review once the smart-contract development is in its final stage, and the contract is ready for deployment.
 
-Re-auditing of a smart-contract includes a full check of the smart-contract code, as any minor changes could affect the overall behavior of the smart-contract. Even if 10 lines of code were changed, the entire smart contract will be re-audited.
+Re-auditing a smart contract includes a full check of the smart-contract code, as any minor changes could affect the overall behavior of the smart contract. Even if 10 lines of code were changed, the entire smart contract would be re-audited.
 
 There are two ways to avoid a complete re-audit if the contract is updated:
 
-- break your smart-contract into modules so that they can be audited separately from each other
+- break your smart contract into modules so that they can be audited separately from each other
 
-- cover the smart-contract code with [automated tests](https://www.trufflesuite.com/docs/truffle/testing/writing-tests-in-solidity) to prove that the update did not affect a behavior of the smart-contract
+- cover the smart-contract code with [automated tests](https://www.trufflesuite.com/docs/truffle/testing/writing-tests-in-solidity) to prove that the update did not affect the behavior of the smart-contract
 
 ## Audit request payments
 
@@ -53,47 +53,47 @@ There are two types of participants in the Security Department:
 
 ### Audit requests order (auditing manager)
 
-For smart-contracts, the following order of audits is determined:
-- Contracts that are important for the whole cryptocurrency industry, can have the highest priority.
-- Contracts intended for deployment in the ETC/CLO network have the highest priority (with the exception of previous paragraph).
+For smart contracts, the following order of audits is determined:
+- Important contracts for the whole cryptocurrency industry can have the highest priority.
+- Contracts intended for deployment in the CLO network have the highest priority (except for the previous paragraph).
 - Contracts of the ETH network have medium priority.
 - Other contracts have low priority.
 - If the audit of the smart contract is already started, then it continues until it is completed, regardless of the availability of other contracts with higher priority in the queue.
 
-After the audit request has been created, it is viewed by the audit manager. If the request meets the requirements, then the auditing manager assigns it `approved` status. `approved` label means that the audit request is available for auditors for picking.
+After the audit request has been created, it is viewed by the audit manager. If the request meets the requirements, the auditing manager assigns it `approved` status. `approved` label means that the audit request is available for auditors to pick.
 
-If there are several requests with different priorities in the queue, then the manager **should** assign the `approved` status only to contracts with the highest priority. The remaining contracts will be checked after the audit of the contracts with the highest priority has been performed. If there are several contracts in the queue with the highest priority, then the audit manager **should** assign the status of `approved` to all these contracts simultaneously. In this case, the contract that auditors will begin to check first will be checked earlier.
+If there are several requests with different priorities in the queue, then the manager **should** assign the `approved` status only to contracts with the highest priority. The remaining contracts will be checked after the audit of the contracts with the highest priority has been performed. If several contracts are in the queue with the highest priority, then the audit manager **should** assign the status of `approved` to all these contracts simultaneously. In this case, the contract that auditors will begin to check first will be checked earlier.
 
-Audit requests that remained in "awaiting payment" status for more than 2 weeks must be closed.
+Audit requests that remained in "awaiting payment" status for more than two weeks must be closed.
 
 ### Performing an audit (security auditor)
 
-After an audit request with an `approved` label appears, an auditor can pick it by commenting the issue and indicating how much time it should take to audit this smart-contract (roughly/ in days). After that, the auditor can start reviewing the code immediately. Other community members **may** also pick the request and submit their audit reports. These reports **must** be reviewed by auditor manager at the end of the auditing process. If the audit request was approved, but none of the auditors picked it, then the audit manager can appoint auditors to check this request if they are not engaged in checking another smart-contract.
+After an audit request with an `approved` label appears, an auditor can pick it by commenting on the issue and indicating how long it should take to audit this smart contract (roughly/ in days). After that, the auditor can start reviewing the code immediately. Other community members **may** also pick the request and submit their audit reports. These reports **must** be reviewed by the auditor manager at the end of the auditing process. If the audit request was approved, but none of the auditors picked it, then the audit manager can appoint auditors to check this request if they are not engaged in checking another smart contract.
 
-Auditing manager **must** comment that the audit is successfully started and mention github nicknames of all the auditors which will be responsible for the check of the corresponding contract after several auditors have picked the issue-request. The audit manager **must** also comment his contact email, to which the auditors will send their secret gists (audit reports).
+The auditing manager **must** comment that the audit is successfully started and mention the GitHub nicknames of all the auditors responsible for checking the corresponding contract after several auditors have picked the issue request. The audit manager **must** also comment on his contact email, to which the auditors will send their secret gists (audit reports).
 
-After the auditor began to check the code, he **must** create a **secret** [github gist](https://gist.github.com/) and send it to the auditing manager by email. An auditor **must not** reveal the audit report gist or publish it anywhere, so that only auditing manager and auditor (gist owner) could review it during the auditing process.
+After the auditor began to check the code, he **must** create a **secret** [github gist](https://gist.github.com/) and send it to the auditing manager by email. An auditor **must not** reveal the audit report gist or publish it anywhere so that only the auditing manager and auditor (gist owner) can review it during the auditing process.
 
-After the auditor has completed the verification of the code, he should comment to the appropriate issue that his audit report is completed. NOTE: An auditor **must not** reveal his report gist!
+After the auditor has completed the code verification, he should comment on the appropriate issue that his audit report is completed. NOTE: An auditor **must not** reveal his report gist!
 
 ### Performing an audit (security auditing manager)
 
-Security Auditing manager is allowed to participate in the audit process alongside assigned auditors. In this case he should create his own Audit Report gist as if he was an auditor and perform the review of the contract code. Since the manager sees all the auditors' reports in the process, he should only describe those findings that the other auditors failed to report.
+The Security Auditing Manager can participate in the audit process alongside assigned auditors. In this case, he should create his own Audit Report gist as if he was an auditor and perform the review of the contract code. Since the manager sees all the auditors' reports in the process, he should only describe those findings that the other auditors failed to report.
 
-Security Auditing manager is not obligated to participate in the auditing process.
+The Security Auditing Manager is not obligated to participate in the auditing process.
 
-There are two possible scenarios for rewarding Security Auditors and Auditing Manager:
+There are two possible scenarios for rewarding Security Auditors and Auditing Managers:
 
-1. In case the Auditing Manager found any "medium" or higher severity issues that other auditors failed to report then these "medium" severity issues must be used in the reward calculation formula (see [Auditing Department reward calculation v2](https://github.com/EthereumCommonwealth/Roadmap/issues/57)). Auditing Manager is paid for the finding of this issue upon completing of the audit as if he was an active auditor.
-2. In case the Auditing Manager did not found any "medium" or higher severity issues that other auditors failed to report then the Auditing Manager is excluded from the process of reward calculation.
+1. In case the Auditing Manager found any "medium" or higher severity issues that other auditors failed to report, then these "medium" severity issues must be used in the reward calculation formula (see [Auditing Department reward calculation v2](https://github.com/EthereumCommonwealth/Roadmap/issues/57)). The auditing Manager is paid for the finding of this issue upon completing the audit as if he was an active auditor.
+2. In case the Auditing Manager did not find any "medium" or higher severity issues that other auditors failed to report, then the Auditing Manager is excluded from the process of reward calculation.
 
 ### Completion of the audit
 
-After all the responsible auditors have completed their reports, the audit manager must compare the reports.
+After all the responsible auditors have completed their reports, the audit manager must compare them.
 
-If there are no significant discrepancies in the reports and no critical errors were found, then the audit manager **must** complete the audit by summarizing the reports and submitting secret gist urls in the comment thread of the corresponding audit request-issue. The audit is considered complete after all the responsible auditors have submitted their reports, and the audit manager has summarized the results of these reports and published report gist urls.
+If there are no significant discrepancies in the reports and no critical errors were found, then the audit manager **must** complete the audit by summarizing the reports and submitting secret gist URLs in the comment thread of the corresponding audit request issue. The audit is considered complete after all the responsible auditors have submitted their reports, and the audit manager has summarized the results of these reports and published report gist URLs.
 
-If one of the community members has expressed a desire to participate in the audit of this contract and also sent his report to the audit manager, then the audit manager **must** review the report and comment its secret gist url to the corresponding github request-issue regardless of whether the audit was already completed or not.
+If one of the community members has expressed a desire to participate in the audit of this contract and also sent his report to the audit manager, then the audit manager **must** review the report and comment its secret gist URL to the corresponding GitHub request-issue regardless of whether the audit was already completed or not.
 
 If any of the auditors described findings that were not included in the final report, then the auditing manager **must** describe the reason for excluding these findings in the comment thread of his fork of the auditor's report-gist.
 
@@ -101,7 +101,7 @@ If any of the auditors described findings that were not included in the final re
 
 Read more here: [Standard disclosure policy of Callisto](https://github.com/CallistoSecurity/Smart-contract-auditing/blob/master/Standard_disclosure_policy.md)
 
-After the audit was completed, the audit manager **may** inform the customer about the results without revealing the reports. After 15 days from the date of informing the customer about the findings, the reports should still be published and the results summed up.
+After completing the audit, the audit manager **may** inform the customer about the results without revealing the reports. After 15 days from informing the customer about the findings, the reports should still be published and the results summed up.
 
 ## Security Auditor's Salary
 
@@ -109,7 +109,7 @@ Security auditors are paid based on the results of their work. Depending on the 
 
 In the Security Department of Callisto, smart-contract auditors are paid once a month.
 
-The total amount of payment is calculated based on the amount of tasks performed during the last month. Each security audit is evaluated separately and a security auditor receives payment for each audit performed.
+The total payment amount is calculated based on the number of tasks performed last month. Each security audit is evaluated separately and a security auditor receives payment for each audit.
 
 Each finding has a certain weight in points. The following values will be used to evaluate findings according to its severity: 
 
@@ -131,40 +131,40 @@ Where:
 
 `audit reward` = budget for this audit.
 
-`sum (auditor points)` - all points earned by the auditor.
+`sum (auditor points)` - all points the auditor earns.
 
-`sum (total points)` - sum of the all points earned by each auditor individually.
+`sum (total points)` - the sum of all points earned by each auditor individually.
 
-The `[number of lines]` of code in the source code of the auditable smart-contract which is calculated excluding empty lines and comments. [SLOC Counter](https://agingcoder.com/tool/2014/04/22/sloc-counter/) will be used for this purpose.
+The `[number of lines]` of code in the source code of the auditable smart contract is calculated excluding empty lines and comments. [SLOC Counter](https://agingcoder.com/tool/2014/04/22/sloc-counter/) will be used for this purpose.
 
 Auditors will receive the reward depending on the quality and quantity of the work done.
-If a contract has only low severity issues or no issues then it’s reward will be divide equally between all auditors who worked at the security audit of this contract.
+If a contract has only low-severity issues or no issues, then its reward will be divided equally between all auditors who worked on the security audit of this contract.
 
 # Security Auditor's guide
 
-## What the auditor of smart-contracts should do.
+## What the auditor of smart contracts should do.
 
 The main task of each security auditor is to check the code for security-related mistakes and write a report on the detected errors after the audit is completed.
 
-1. All the work will be coordinated through github. Each auditor **must** visit the [Auditing/issues](https://github.com/CallistoSecurity/Smart-contract-auditing/issues) repository section every (working) day.
+1. All the work will be coordinated through GitHub. Each auditor **must** visit the [Auditing/issues](https://github.com/CallistoSecurity/Smart-contract-auditing/issues) repository section every (working) day.
 
-If an audit request (issue) which is labeled `approved` appears in the list,  the auditor **may** pick it. The audit manager can also appoint an auditor if he is not currently engaged in any smart contract checking, by mentioning their github nicknames in the corresponding issue. If the auditor was appointed to a certain issue by the auditing manager, then the auditor **must** perform a verification of the corresponding contract.
+If an audit request (issue) labeled `approved` appears in the list,  the auditor **may** pick it. The audit manager can appoint an auditor if he is not engaged in smart contract checking by mentioning their GitHub nicknames in the corresponding issue. If the auditor was appointed to a certain issue by the auditing manager, then the auditor **must** verify the corresponding contract.
 
-2. After the auditor has received the objective of his work, he **must** comment the time that, in his opinion, will be required to verify this smart-contract. 
+2. After the auditor has received the objective of his work, he **must** comment on the time that, in his opinion, will be required to verify this smart contract. 
 
-3. The auditor **must** create a **secret** gist (audit report template) and send it to the auditing manager by email. WARNING: the auditor must never reveal the gist url. It will be revealed by auditing manager at the end of the auditing process. The secret gist should be named as follows: `NETWORK_contract_name_report.md`
+3. The auditor **must** create a **secret** gist (audit report template) and send it to the auditing manager by email. WARNING: the auditor must never reveal the gist URL. The auditing manager will reveal it at the end of the auditing process. The secret gist should be named as follows: `NETWORK_contract_name_report.md`
 
 Example: `ETH_the_dao_report.md`
 
 4. The auditor **must** check the contract code, perform necessary testing and describe findings at the secret gist (audit report).
 
-Other auditors, community members and the audit manager will also check this smart contract, so the auditor is not incentivised in hiding the errors found or trying to exploit them.
+Other auditors, community members, and the audit manager will also check this smart contract, so the auditor is not incentivized to hide the errors found or try to exploit them.
 
-5. After the auditor has completed the verification of the code and supplemented his report with a description of the findings, he should comment the corresponding issue that his report is finished.
+5. After the auditor has completed the code verification and supplemented his report with a description of the findings, he should comment on the issue that his report is finished.
 
-# Audit Report template
+# Audit Report Template
 
-The audit report name should start with a capital letter. Use underscores instead of spaces between words, write reports in `.md` format.
+The audit report name should start with a capital letter. Use underscores instead of spaces between words, and write reports in `.md` format.
 
 The report should contain a title describing to which contract or contract system the report belongs.
 
@@ -172,17 +172,17 @@ The report should contain the following sections:
 
 ## 1. Summary
 
-Briefly describe the audit report, the purpose of a contract (or contract system) that was reviewed and key features of the contract.
+Briefly describe the audit report, the purpose of a contract (or contract system) that was reviewed, and key features of the contract.
 
 *This may be important to understand the inner logic of the contract or a contract system.*
 
 ## 2. In scope
 
-Specify the range of contracts, the version of the contracts that have been verified. If the source code was published on Github, then specify the commit hash.
+Specify the range of contracts and the version of the contracts that have been verified. If the source code was published on Github, specify the commit hash.
 
 #### 2.1 Excluded (optional)
 
-Specify which files or contracts were not checked during the audit if there were any contracts/files that were excluded for some reason.
+Specify which files or contracts were not checked during the audit and if there were any contracts/files that were excluded for some reason.
 
 ## 3. Findings
 
@@ -194,19 +194,19 @@ Summarize the total amount of mistakes and their severity.
 
 Severity assigning:
 
-- high - vulnerability can be exploited at any time and cause a loss of customers funds or a complete breach of contract operability. *(Example: [Parity Multisig hack](https://medium.com/@Pr0Ger/another-parity-wallet-hack-explained-847ca46a2e1c), a user has exploited a vulnerability and violated the operability of the whole system of smart-contracts (Parity Multisigs). This could performed regardless of external conditions at any time.)*
+- high - vulnerability can be exploited at any time and cause a loss of customers' funds or a complete breach of contract operability. *(Example: [Parity Multisig hack](https://medium.com/@Pr0Ger/another-parity-wallet-hack-explained-847ca46a2e1c), a user has exploited a vulnerability and violated the operability of the whole system of smart-contracts (Parity Multisigs). This could be performed regardless of external conditions at any time.)*
 
-- medium - vulnerability can be exploited in some specific circumstances and cause a loss of customers funds or a breach of operability of smart-contract (or smart-contract system). 
+- medium - vulnerability can be exploited in some specific circumstances and cause a loss of customers' funds or a breach of operability of a smart contract (or smart-contract system). 
 
-- low - vulnerability can not cause a loss of customers funds or a breach of contracts operability. However it can cause any kind of problems or inconveniences. *(Example: [Permanent owners of multisig contracts](https://gist.github.com/Dexaran/2389d5e7290ab69709d33abfe0485bec#1-permanent-ownership), owners are permanent, thus if it will be necessary to remove a misbehaving "owner" from the owners list then it will require to redeploy the whole contract and transfer funds to a new one.)*
+- low - vulnerability can not cause a loss of customers' funds or a breach of contract operability. However, it can cause problems or inconveniences. *(Example: [Permanent owners of multisig contracts](https://gist.github.com/Dexaran/2389d5e7290ab69709d33abfe0485bec#1-permanent-ownership), owners are permanent, thus if it will be necessary to remove a misbehaving "owner" from the owners list then it will require to redeploy the whole contract and transfer funds to a new one.)*
 
 - minor observation - other code flaws, not security-related issues.
 
-- owner privileges - a specific severity class for findings which provide the owner with the ability to manipulate the contract in such a way that it could theoretically harm users in case the owner will act maliciously or the owners account get compromised.
+- owner privileges - a specific severity class for findings that provide the owner with the ability to manipulate the contract in such a way that it could theoretically harm users in case the owner acts maliciously, or the owner's account gets compromised.
 
 #### Code snippet
 
-Give a link to a fragment of code that can lead to an error that you describe.
+Give a link to a code fragment that can lead to an error you describe.
 
 #### Description
 
@@ -219,9 +219,9 @@ Write down how the bug can be fixed if you know how to do it. However, fixing bu
 ## 4. Conclusion
 
 Describe the most important findings and their relationship to the main purpose of the contract. Describe how the internal logic of the contract is related to its purpose.
-Indicate whether the contract is safe or any critical problems needs to be resolved.
+Indicate whether the contract is safe or whether any critical problems must be resolved.
 
-# Example: ETC multisig audit report
+# Example: ETC multi-sig audit report
 
-https://gist.github.com/Dexaran/2389d5e7290ab69709d33abfe0485bec
+https://gist.github.com/yuriy77k/3d37730343d51b6113543cd8c3d366e4
 
