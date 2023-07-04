@@ -221,7 +221,7 @@ Write down how the bug can be fixed if you know how to do it. However, fixing bu
 Describe the most important findings and their relationship to the main purpose of the contract. Describe how the internal logic of the contract is related to its purpose.
 Indicate whether the contract is safe or whether any critical problems must be resolved.
 
-# Example: ETC multi-sig audit report
+# Example of audit report
 
 https://gist.github.com/yuriy77k/3d37730343d51b6113543cd8c3d366e4
 
