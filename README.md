@@ -2,7 +2,7 @@
 
 ## Callisto Auditing Department is moving to Callisto Security
 
-Previous audits you can find here: https://github.com/EthereumCommonwealth/Auditing/issues
+Previous audits can be found here: https://github.com/CallistoSecurity/AuditReports/tree/main/Reports
 
 # Linking Audit Services and CLO Value
 
